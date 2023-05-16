@@ -8,6 +8,7 @@ class Products:
         self.product_quantity = quantity
         self.product_image = image
     
+
     #method to add products to the products list in the web app
     def add_product(self):
         product_dict = {                #dictionary to represent attributes and their values 
@@ -20,9 +21,11 @@ class Products:
         
         return product_dict
 
+
 products_list = []      #empty list to store all products
 
 num_products = int(input("How many products do you want to add? "))      #prompt to enter no of produts to be added
+
 
 #loop to iterate over number of products to be added, and prompt user to enter details of each product
 for i in range(num_products):
