@@ -64,7 +64,7 @@ def edit_products(products_list):
             
             return "Product edited successfully."
         
-        else:
+        else:      #if product not found
             print("Product not found.")
 
 edit_products(products_list)
@@ -79,7 +79,8 @@ def delete_product(products_list):
             products_list.remove(product)
             return "Product deleted successfully."
         
-        else:
+        else:      #if product not found
             print("Product not found.")
             
+
 delete_product(products_list)
