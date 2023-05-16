@@ -1,14 +1,14 @@
 class Orders:
-    def __init__(self,Name,order,payment,deliveryAdress,status) :
+    def __init__(self,name,order,payment,deliveryAdress,status) :
         self.order=order
-        self.Name=Name
+        self.name=name
         self.payment=payment
         self.deliveryAddress=deliveryAdress
         self.status=status
         #create a dictionary of the order attribute and returns it
     def add_order(self):
         orders_dict={
-           "name":self.Name,
+           "name":self.name,
            "order":self.order,
            "payment":self.payment,
            "deliveryAdress":self.deliveryAddress,
@@ -17,7 +17,7 @@ class Orders:
        }
         return orders_dict
     # Prompts the user to input their details
-Name=input("input your name")
+name=input("input your name")
 order=input("Input the type of order")
 payment=input("Input the type of payment")
 deliveryAddress=input("Input your delivery address")
